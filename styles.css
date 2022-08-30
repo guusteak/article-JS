@@ -26,11 +26,13 @@ body{
     display: flex;
     background-color: white;
     border-radius: 15px;
-    overflow: hidden;
+
 }
 
 .left-image{
+    border-radius: 15px 0 0 15px;
     width: 40%;
+    overflow: hidden;
 }
 
 .left-image img{
@@ -85,13 +87,13 @@ body{
     background-color: lightgray;
 }
 
-#JS-button{
+.JS-button{
     position: relative;
+    overflow: visible;
 }
 
 
-#JS-inner-button{
-    display: visible;
+#JS-inner-button{  
     border: 1px solid black;
     position: absolute;
     background-color: gray;
@@ -102,12 +104,12 @@ body{
     height: 30px;
     padding: 10px;
     align-items: center;
-    top: 320px;
-    left: 870px;
+    top: -55px;
+    left: -85px;
 }
 
 .none{
-    display: none;
+    visibility: hidden;
 }
 
 #JS-inner-button img{
