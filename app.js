@@ -8,10 +8,13 @@ function show(){
     console.log("dodalem");
     if(flag.classList.contains("none")){
         flag.classList.remove("none");
+        flag.classList.add("boom");
         console.log("drugi klik");
     }
     else{       
+        flag.classList.remove("boom");
         flag.classList.add("none");
         console.log("pierwszy klik");
+        
     }
 }

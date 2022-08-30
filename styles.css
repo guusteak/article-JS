@@ -26,6 +26,7 @@ body{
     display: flex;
     background-color: white;
     border-radius: 15px;
+    min-width: 600px;
 
 }
 
@@ -66,6 +67,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 60%;
+    gap: 10px;
 }
 
 .person{
@@ -106,6 +108,14 @@ body{
     align-items: center;
     top: -55px;
     left: -85px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.boom{
+    transform: scale(1.01);
+    transition: all 500ms;
 }
 
 .none{
@@ -118,4 +128,49 @@ body{
 
 .gray{
     color: hsl(217, 19%, 35%);
+}
+
+@media only screen and (max-width: 400px){
+    .container{
+        width: 80%;
+        flex-direction: column;
+        min-width: 300px;
+        min-height: fit-content;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .left-image{
+        width: 100%;
+        border-radius: 0 0 0 0;
+    }
+
+    .right-text{
+        width: 100%;
+        padding: 0px;
+        min-height: 300px;
+    }
+    .heading{
+        min-height: 200px;
+        justify-content: center;
+        margin: 10px;
+
+    }
+
+    .bottom-text{
+        margin: 10px;
+    }
+
+    #bbb{
+        z-index: 1;
+        position: absolute;
+        top: -10px;
+        left: -30px;
+    }
+
+    #JS-inner-button{
+        left: -300px;
+        top:-25px;
+        z-index: 0;
+        width: 300px
+    }
 }
